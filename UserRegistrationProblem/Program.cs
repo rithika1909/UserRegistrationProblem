@@ -26,6 +26,11 @@ namespace UserRegistrationProblem
                         validate.LastName(LastName);
                         break;
                     case 3:
+                        Console.WriteLine("Enter the email to validate:");
+                        string Email = Console.ReadLine();
+                        validate.Email(Email);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
