@@ -51,6 +51,11 @@ namespace UserRegistrationProblem
                         validate.Numeric(Numeric);
                         break;
                     case 8:
+                        Console.WriteLine("Enter the password to validate:");
+                        string SpecialCharacter = Console.ReadLine();
+                        validate.SpecialCharacter(SpecialCharacter);
+                        break;
+                    case 9:
                         flag = false;
                         break;
                     

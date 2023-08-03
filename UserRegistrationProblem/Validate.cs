@@ -16,6 +16,7 @@ namespace UserRegistrationProblem
         string character = "^.{8,}$";
         string upperCase = "^(?=.*[A-Z]).{8,}$";
         string numeric = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
+        string specialCharacter = @"^(?=.*[\$\&\+\,\:\;\=\?\@\#\|\'\<\>\.\-\^\*\(\)\%\!])(?=.*[0-9])(?=.*[A-Z]).{8,}$";
 
         public void FirstName(string input)
         {
@@ -69,6 +70,14 @@ namespace UserRegistrationProblem
         public void Numeric(string input)
         {
             bool result = Regex.IsMatch(input, numeric);
+            if (result)
+                Console.WriteLine("Validation Successful");
+            else
+                Console.WriteLine("Validation Unsuccessful");
+        }
+        public void SpecialCharacter(string input)
+        {
+            bool result = Regex.IsMatch(input, specialCharacter);
             if (result)
                 Console.WriteLine("Validation Successful");
             else
