@@ -14,6 +14,8 @@ namespace UserRegistrationProblem
         string email = "^[a-z]+[._+-]{0,1}[a-z]+[@]{1}[a-z]+[.]{1}[a-z]{2,3}([.]{1}[a-z]{2}){0,1}$";
         string phoneNumber = "^[0-9]{2}[ ]{1}[0-9]{10}$";
         string character = "^.{8,}$";
+        string upperCase = "^(?=.*[A-Z]).{8,}$";
+      
         public void FirstName(string input)
         {
             bool result = Regex.IsMatch(input, firstName);
@@ -54,6 +56,17 @@ namespace UserRegistrationProblem
             else
                 Console.WriteLine("Validation Unsuccessful");
         }
+       
+        public void UpperCase(string input)
+        {
+            bool result = Regex.IsMatch(input, upperCase);
+            if (result)
+                Console.WriteLine("Validation Successful");
+            else
+                Console.WriteLine("Validation Unsuccessful");
+        }
+       
+       
     }
 }
    
