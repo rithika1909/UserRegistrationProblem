@@ -46,6 +46,11 @@ namespace UserRegistrationProblem
                         validate.UpperCase(UpperCase);
                         break;
                     case 7:
+                        Console.WriteLine("Enter the password to validate:");
+                        string Numeric = Console.ReadLine();
+                        validate.Numeric(Numeric);
+                        break;
+                    case 8:
                         flag = false;
                         break;
                     
