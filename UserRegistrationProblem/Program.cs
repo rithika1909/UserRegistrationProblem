@@ -36,6 +36,11 @@ namespace UserRegistrationProblem
                         validate.PhoneNumber(PhoneNumber);
                         break;
                     case 5:
+                        Console.WriteLine("Enter the password to validate:");
+                        string Character = Console.ReadLine();
+                        validate.CheckCharacter(Character);
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
