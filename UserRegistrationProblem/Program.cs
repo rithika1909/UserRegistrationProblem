@@ -31,6 +31,11 @@ namespace UserRegistrationProblem
                         validate.Email(Email);
                         break;
                     case 4:
+                        Console.WriteLine("Enter the phone number to validate:");
+                        string PhoneNumber = Console.ReadLine();
+                        validate.PhoneNumber(PhoneNumber);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
