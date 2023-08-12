@@ -56,6 +56,7 @@ namespace UserRegistration
             bool result = Regex.IsMatch(input, specialCharacter);
             return result;
         }
+        public bool ValidateRegex(string input) => Regex.IsMatch(input, specialCharacter)? true : false;
 
     }
 }

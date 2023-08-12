@@ -12,7 +12,16 @@ namespace UserRegistrationTest
             string input = "Rithikaa";
             Validate firstName = new Validate();
             bool result = firstName.FirstName(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
         [Test]
         public void TestLastName()
@@ -20,7 +29,16 @@ namespace UserRegistrationTest
             string input = "Logachandran";
             Validate lastName = new Validate();
             bool result = lastName.LastName(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
         [Test]
         public void TestEmail()
@@ -28,7 +46,16 @@ namespace UserRegistrationTest
             string input = "riyareji@gmail.com";
             Validate email = new Validate();
             bool result = email.Email(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
         [Test]
         public void TestPhoneNumber()
@@ -36,7 +63,16 @@ namespace UserRegistrationTest
             string input = "91 9012345678";
             Validate phonenumber = new Validate();
             bool result = phonenumber.PhoneNumber(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
         [Test]
         public void TestCheckCharacter()
@@ -44,7 +80,16 @@ namespace UserRegistrationTest
             string input = "riya@1234";
             Validate character = new Validate();
             bool result = character.CheckCharacter(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
         [Test]
         public void TestUpperCase()
@@ -52,7 +97,16 @@ namespace UserRegistrationTest
             string input = "Riya1234";
             Validate uppercase = new Validate();
             bool result = uppercase.UpperCase(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
         [Test]
         public void TestNumeric()
@@ -60,7 +114,16 @@ namespace UserRegistrationTest
             string input = "Riya1234";
             Validate numeric = new Validate();
             bool result = numeric.Numeric(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
         [Test]
         public void TestSpecialCharacter()
@@ -68,7 +131,16 @@ namespace UserRegistrationTest
             string input = "Riya@1234";
             Validate special = new Validate();
             bool result = special.SpecialCharacter(input);
-            Assert.IsTrue(result);
+            string value = "";
+            if (result)
+            {
+                value = "HAPPY";
+            }
+            else
+            {
+                value = "SAD";
+            }
+            Assert.AreEqual(value, "HAPPY");
         }
     }
 }
