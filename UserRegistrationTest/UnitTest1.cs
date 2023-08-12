@@ -142,5 +142,18 @@ namespace UserRegistrationTest
             }
             Assert.AreEqual(value, "HAPPY");
         }
+
+        [Test]
+        public void TestAllEmails()
+        {
+            string[] input = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com",
+                "abc-100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com" };
+            Validate trueEmails = new Validate();
+            foreach (var item in input)
+            {
+                bool result = trueEmails.Email(item);
+                Assert.IsTrue(result);
+            }
+        }
     }
 }
