@@ -77,7 +77,7 @@ namespace UserRegistrationTest
         [Test]
         public void TestCheckCharacter()
         {
-            string input = "rithika@1234";
+            string input = "rithika@123";
             Validate character = new Validate();
             bool result = character.CheckCharacter(input);
             string value = "";
@@ -94,7 +94,7 @@ namespace UserRegistrationTest
         [Test]
         public void TestUpperCase()
         {
-            string input = "Rithika1234";
+            string input = "Rithika123";
             Validate uppercase = new Validate();
             bool result = uppercase.UpperCase(input);
             string value = "";
@@ -111,7 +111,7 @@ namespace UserRegistrationTest
         [Test]
         public void TestNumeric()
         {
-            string input = "Rithika1234";
+            string input = "Rithika123";
             Validate numeric = new Validate();
             bool result = numeric.Numeric(input);
             string value = "";
@@ -128,7 +128,7 @@ namespace UserRegistrationTest
         [Test]
         public void TestSpecialCharacter()
         {
-            string input = "Rithika@1234";
+            string input = "Rithika@123";
             Validate special = new Validate();
             bool result = special.SpecialCharacter(input);
             string value = "";
