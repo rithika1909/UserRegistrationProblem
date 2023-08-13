@@ -60,7 +60,7 @@ namespace UserRegistrationTest
         [Test]
         public void TestPhoneNumber()
         {
-            string input = "9789286965";
+            string input = "91 9789286965";
             Validate phonenumber = new Validate();
             bool result = phonenumber.PhoneNumber(input);
             string value = "";
@@ -146,8 +146,8 @@ namespace UserRegistrationTest
         [Test]
         public void TestAllEmails()
         {
-            string[] input = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com",
-                "abc-100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com" };
+            string[] input = { "abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com",
+            "abc-100@abc.com.au","abc@1.com","abc@gmail.com.com","abc+100@gmail.com"};
             Validate trueEmails = new Validate();
             foreach (var item in input)
             {
